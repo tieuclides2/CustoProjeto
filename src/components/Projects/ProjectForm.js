@@ -1,6 +1,8 @@
+import Styles from './ProjectForm.module.css'
+
 function ProjectForm() {
     return (
-        <form>
+        <form className={Styles.form}> 
             <div>
                 <input type="Text" placeholder="Insira o nome do projeto" />
             </div>
@@ -9,7 +11,9 @@ function ProjectForm() {
             </div>
             <div>
                 <select name="category_id">
-                    <option disabled>Selecione a categoria</option>
+                    <option disabled>
+                        Selecione a categoria
+                    </option>
                 </select>
             </div>
             <div>
